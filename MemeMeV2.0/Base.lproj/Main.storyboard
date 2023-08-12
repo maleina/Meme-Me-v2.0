@@ -42,7 +42,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="Aq5-rz-ens" customClass="SentMemesCollectionViewCell" customModule="MemeMeV2_0" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SentMemesCollectionViewCell" id="Aq5-rz-ens" customClass="SentMemesCollectionViewCell" customModule="MemeMeV2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qax-Xy-TkD">
@@ -63,7 +63,7 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="OV0-1T-8LH" id="jbQ-sC-sne"/>
+                                    <outlet property="imageView" destination="OV0-1T-8LH" id="Su3-3R-69v"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
