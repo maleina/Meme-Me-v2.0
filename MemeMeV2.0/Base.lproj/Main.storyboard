@@ -257,6 +257,36 @@
             </objects>
             <point key="canvasLocation" x="117" y="15"/>
         </scene>
+        <!--MemeDetail-->
+        <scene sceneID="Fjy-Jc-9LS">
+            <objects>
+                <viewController storyboardIdentifier="MemeDetailViewController" title="MemeDetail" id="Boe-aG-x0g" customClass="MemeDetailViewController" customModule="MemeMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQH-kN-IIf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eln-EY-yde">
+                                <rect key="frame" x="1" y="78" width="391" height="740"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J3b-iL-3ec"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eln-EY-yde" firstAttribute="top" secondItem="J3b-iL-3ec" secondAttribute="top" constant="19" id="8IK-Jq-j7e"/>
+                            <constraint firstItem="eln-EY-yde" firstAttribute="leading" secondItem="J3b-iL-3ec" secondAttribute="leading" constant="1" id="ElQ-vo-ryX"/>
+                            <constraint firstItem="J3b-iL-3ec" firstAttribute="trailing" secondItem="eln-EY-yde" secondAttribute="trailing" constant="1" id="ErK-Pj-E5c"/>
+                            <constraint firstItem="eln-EY-yde" firstAttribute="bottom" secondItem="J3b-iL-3ec" secondAttribute="bottom" id="O8e-tH-Mik"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="voW-ya-FFG"/>
+                    <connections>
+                        <outlet property="imageView" destination="eln-EY-yde" id="KDj-Hl-L6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uZ-FK-sbH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="-687.32394366197184"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="byr-cb-LnH"/>
