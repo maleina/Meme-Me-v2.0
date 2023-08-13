@@ -52,7 +52,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         #else
             cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         #endif
-        toggleTopButtons()
+        setTopButtons()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -89,7 +89,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         bottomTextField.text = "BOTTOM"
         imagePickerView.image = nil
         dismiss(animated: true, completion: nil)
-        toggleTopButtons()
+        setTopButtons()
     }
     
     // MARK: Helper Methods
@@ -165,13 +165,14 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     // Show and hide cancel and share buttons appropriately (show only if an image has been picked)
-    func toggleTopButtons() {
+    func setTopButtons() {
+        // cancel is always enabled
+        cancelButton.isEnabled = true
+        // toggle share button
         if imagePickerView.image == nil {
             shareButton.isEnabled = false
-            cancelButton.isEnabled = false
         } else {
             shareButton.isEnabled = true
-            cancelButton.isEnabled = true
         }
     }
     
@@ -184,7 +185,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             imagePickerView.image = image
                 }
         dismiss(animated: true, completion: nil)
-        toggleTopButtons()
+        setTopButtons()
     }
     
     // Dismisses the image picker if the user cancels
