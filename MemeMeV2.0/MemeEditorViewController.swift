@@ -32,7 +32,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     // Text Field Delegate
     let textFieldDelegate = TextFieldDelegate()
     
-    // MARK: Life Cycle Meethods
+    // MARK: Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
