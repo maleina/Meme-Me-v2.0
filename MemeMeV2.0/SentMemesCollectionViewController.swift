@@ -36,11 +36,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
         
         super.viewDidLoad()
 
-        // Register cell classes
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        
-        
+ 
         // Flow layout configuration
         // This code is adapted from Udacity's Build V2.0 of the MemeMe App lesson
         let space:CGFloat = 2.0
