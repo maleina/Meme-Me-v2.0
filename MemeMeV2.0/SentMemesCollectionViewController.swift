@@ -42,10 +42,10 @@ class SentMemesCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
         
         // Flow layout configuration
-        // This code is borrowed from Udacity's Build V2.0 of the MemeMe App lesson
-        let space:CGFloat = 3.0
-        let width = (view.frame.size.width - (2 * space)) / 3.0
-        let height = (view.frame.size.height - (2 * space)) / 3.0
+        // This code is adapted from Udacity's Build V2.0 of the MemeMe App lesson
+        let space:CGFloat = 2.0
+        let width = (view.frame.size.width - (2 * space))/3.0
+        let height = (view.frame.size.height - (2 * space))/3.0
 
         flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
@@ -70,7 +70,6 @@ class SentMemesCollectionViewController: UICollectionViewController {
             
         return cell
     }
-    
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
