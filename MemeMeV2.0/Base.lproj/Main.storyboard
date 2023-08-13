@@ -50,10 +50,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OV0-1T-8LH">
-                                            <rect key="frame" x="14" y="14" width="100" height="100"/>
+                                            <rect key="frame" x="-11" y="-11" width="150" height="150"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="1tM-p7-YBo"/>
-                                                <constraint firstAttribute="width" constant="100" id="BMj-AH-KVr"/>
+                                                <constraint firstAttribute="height" constant="150" id="1tM-p7-YBo"/>
+                                                <constraint firstAttribute="width" constant="150" id="BMj-AH-KVr"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -73,7 +73,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="Vx7-hZ-lyx">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="moC-r0-d04">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="moC-r0-d04">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="presentation" id="byr-cb-LnH"/>
                             </connections>
@@ -111,7 +111,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="7aQ-xt-Xuh">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="bx9-er-uZL">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="bx9-er-uZL">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="presentation" id="Hid-46-OMx"/>
                             </connections>
@@ -289,11 +289,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byr-cb-LnH"/>
+        <segue reference="Hid-46-OMx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
